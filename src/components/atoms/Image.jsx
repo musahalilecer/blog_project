@@ -8,4 +8,4 @@ const Image = ({src, alt, style}) => {
   )
 }
 
-export default Image
+export default Image;
