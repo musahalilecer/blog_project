@@ -1,52 +1,54 @@
-# Blog Project - Java Spring Boot Backend API
+# Blog Project - Modern React Frontend (Vite)
 
-A professional, server-side content management system (CMS) built with **Java** and **Spring Boot**. This project is designed to handle the core functionalities of a blogging platform, providing a secure and scalable RESTful API for content creation, user management, and social interactions.
+A high-performance, scalable web interface built with **React** and **Vite**. This project focuses on modern frontend architecture, utilizing **Atomic Design** principles and a robust routing system to ensure a seamless and maintainable user experience.
 
 ## 🚀 Overview
 
-The Blog Project serves as a comprehensive backend solution for modern publishing platforms. It emphasizes structured data management and efficient API design, ensuring a seamless experience for potential frontend integrations.
+The Blog Project Frontend is a demonstration of contemporary web development practices. It is engineered for speed and modularity, emphasizing a clear separation of UI components and a sophisticated client-side navigation structure.
 
 ## ✨ Key Features
 
-*   **Article Management:** Full CRUD operations for blog posts, including support for rich text content and metadata.
-*   **User Authentication & Authorization:** Secure user onboarding and role-based access control to protect administrative actions.
-*   **Categorization & Tagging:** Organized content structure allowing users to filter posts by specific topics or labels.
-*   **Comment System:** Interactive features enabling user engagement and feedback on published articles.
-*   **Search Functionality:** Optimized query structures for discovering content across the platform.
-*   **Automated Error Handling:** Global exception management to ensure consistent and informative API responses.
+*   **Atomic Design Methodology:** UI components are strictly organized into Atoms, Molecules, Organisms, Templates, and Pages for maximum reusability.
+*   **Modern Routing System:** Advanced client-side navigation featuring protected routes and dynamic path handling.
+*   **Vite-Powered Performance:** Optimized build times and lightning-fast Hot Module Replacement (HMR).
+*   **Component-Driven Development:** Focus on building modular, independent UI elements.
+*   **Responsive UX:** Fluid layouts designed to provide a consistent experience across all device sizes.
+*   **Declarative UI:** Leveraging the power of React for efficient state management and rendering.
 
 ## 🛠 Tech Stack
 
-*   **Language:** Java 17+[cite: 3]
-*   **Framework:** Spring Boot (Web, Data JPA, Security)[cite: 3]
-*   **Database:** SQL Persistence (PostgreSQL / MySQL / H2)[cite: 3]
-*   **Build Tool:** Maven / Gradle
-*   **Architecture:** Layered Architecture (Controller, Service, Repository)
+*   **Framework:** React 18+[cite: 3]
+*   **Build Tool:** Vite[cite: 3]
+*   **Styling:** CSS Modules / Tailwind CSS (whichever applies)
+*   **Architecture:** Atomic Design Pattern
+*   **Routing:** React Router DOM (Modern Data APIs)
+*   **Language:** JavaScript / TypeScript[cite: 3]
 
-## 🏗 Engineering & Architecture
+## 🏗 Architectural Excellence
 
-As a demonstration of high-tier software engineering, this project implements:
-*   **SOLID Principles:** High modularity and clear separation of concerns to facilitate testing and maintenance[cite: 3].
-*   **Clean Code:** Focused on readability, naming conventions, and reducing technical debt[cite: 3].
-*   **DTO (Data Transfer Object) Pattern:** Isolating internal database entities from external API contracts for security and flexibility.
-*   **Dependency Injection:** Leveraging Spring's IoC container for loosely coupled component management.
+Reflecting high-tier software engineering standards, this project implements:
+*   **Modular Component Design:** Ensuring that every UI element is isolated, testable, and reusable[cite: 3].
+*   **Clean Code:** Focused on readability, consistent naming conventions, and organized folder structures[cite: 3, 6].
+*   **Scalable Folder Structure:** Built to support large-scale application growth through Atomic Design layers.
 
 ## 🏁 Getting Started
 
 ### Prerequisites
-*   JDK 17 or higher
-*   Maven/Gradle
-*   A running SQL Database instance
+*   Node.js (LTS version)
+*   npm / yarn / pnpm
 
 ### Installation
 1.  Clone the repository:
     ```bash
     git clone [https://github.com/musahalilecer/blog_project.git](https://github.com/musahalilecer/blog_project.git)
     ```
-2.  Update `src/main/resources/application.properties` with your database credentials.
-3.  Build and run the application:
+2.  Install dependencies:
     ```bash
-    ./mvnw spring-boot:run
+    npm install
+    ```
+3.  Run the development server:
+    ```bash
+    npm run dev
     ```
 
 ## 📜 License
