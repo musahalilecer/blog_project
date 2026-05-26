@@ -7,7 +7,7 @@ export const blogs = [
     "date": "2025-06-20",
     "commentCount": 5,
     "authorName": "Alice Johnson",
-    "authorProfileUrl": "https://randomuser.me/api/portraits/women/1.jpg"
+    "authorProfileUrl": "https://randomuser.me/api/portraits/women/1.jpg",
   },
   {
     "id": 2,

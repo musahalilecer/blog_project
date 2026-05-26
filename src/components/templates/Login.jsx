@@ -1,9 +1,116 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import Button from '../atoms/Button';
 
 const Login = () => {
-  return (
-    <div>Login</div>
-  )
-}
 
-export default Login
+  const navigation = useNavigate();
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br bg-white py-12 px-4 sm:px-6 lg:px-8 overflow-auto">
+      <div className="max-w-md w-full mx-auto space-y-8 bg-gray-50 p-8 rounded-xl shadow-lg">
+        {/* Header */}
+        <div>
+          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+            Welcome Back
+          </h2>
+          <p className="mt-2 text-center text-sm text-gray-600">
+            Please sign in to your account
+          </p>
+        </div>
+
+        {/* Form */}
+        <form className="mt-8 space-y-6">
+          <div className="rounded-md shadow-sm space-y-4">
+            {/* Username Field */}
+            <div>
+              <label 
+                htmlFor="username" 
+                className="block text-sm font-medium text-gray-700 mb-2"
+              >
+                Username
+              </label>
+              <div className="relative">
+                <input
+                  id="username"
+                  name="username"
+                  type="text"
+                  required
+                  className="appearance-none relative block w-full px-4 py-3 border border-gray-300 rounded-lg placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm transition duration-200"
+                  placeholder="Enter your username"
+                />
+              </div>
+            </div>
+
+            {/* Password Field */}
+            <div>
+              <label 
+                htmlFor="password" 
+                className="block text-sm font-medium text-gray-700 mb-2"
+              >
+                Password
+              </label>
+              <div className="relative">
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  required
+                  className="appearance-none relative block w-full px-4 py-3 border border-gray-300 rounded-lg placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm transition duration-200"
+                  placeholder="Enter your password"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Remember me and Forgot password */}
+          <div className="flex items-center justify-between">
+            <div className="flex items-center">
+              <input
+                id="remember-me"
+                name="remember-me"
+                type="checkbox"
+                className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded cursor-pointer"
+              />
+              <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">
+                Remember me
+              </label>
+            </div>
+
+            <div className="text-sm">
+              <a href="#" className="font-medium text-blue-600 hover:text-blue-500">
+                Forgot your password?
+              </a>
+            </div>
+          </div>
+
+          {/* Login Button */}
+          <div>
+            <button
+              type="submit"
+              className="group relative w-full flex justify-center py-3 px-4 border border-transparent rounded-lg text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-200 shadow-md hover:shadow-lg"
+            >
+              Sign in
+            </button>
+          </div>
+
+          {/* Sign up link */}
+          <div className="text-center mt-4">
+            <p className="text-sm text-gray-600">
+              Don't have an account?{' '}
+              <a
+               href="#" 
+               className="font-medium text-blue-600 hover:text-blue-500"
+               onClick={() => navigation("/register")}
+               >
+                Sign up
+              </a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default Login;

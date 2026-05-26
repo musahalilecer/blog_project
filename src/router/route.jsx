@@ -2,6 +2,7 @@ import React, { lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import Layout from '../components/templates/Layout';
 import NotFound from '../components/templates/NotFound';
+import Register from '../components/templates/Register';
 
 const Home   = lazy(() => import('../components/pages/home'));
 const About  = lazy(() => import('../components/pages/about'));
@@ -18,7 +19,8 @@ export const route = createBrowserRouter([
       { path: 'about',   element: <About /> },
       { path: 'images',  element: <Images /> },
       { path: 'login',   element: <Login /> },
-      { path: 'detail/:id',  element: <Detail />}
+      { path: 'detail/:id',  element: <Detail />},
+      { path: 'register', element: <Register />}
     ],
   },
 ]);
